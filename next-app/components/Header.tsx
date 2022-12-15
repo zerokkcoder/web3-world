@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import ThemeToggler from "./ThemeToggler";
 
 export default function Header() {
+    const routes = ['Blog', 'Work', 'Contract'];
+    const router = useRouter();
     return (
         <header className="container mx-auto flex justify-between h-16 items-center">
             <Link href="/">
@@ -13,15 +16,13 @@ export default function Header() {
             </Link>
             <nav>
                 <ul className="flex gap-6 font-medium items-center">
-                    <li>
-                        <Link href='/blog'>Blog</Link>
-                    </li>
-                    <li>
-                        <Link href='/work'>Work</Link>
-                    </li>
-                    <li>
-                        <Link href='#'>Contact</Link>
-                    </li>
+                    {routes.map((route) => {
+                        return (
+                            <li>
+                                <Link className={`hover:text-yellow-400 hover:underline hover:underline-offset-4 ${router.pathname === `/${route.toLowerCase()}` && 'text-yellow-400'}`} href={`${route.toLowerCase()}`}>{route.toUpperCase()}</Link>
+                            </li>
+                        );
+                    })}
                     <li>
                         <ThemeToggler />
                     </li>
