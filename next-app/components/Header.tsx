@@ -17,7 +17,7 @@ export default function Header() {
                         <Link href='/blog'>Blog</Link>
                     </li>
                     <li>
-                        <Link href='#'>Work</Link>
+                        <Link href='/work'>Work</Link>
                     </li>
                     <li>
                         <Link href='#'>Contact</Link>

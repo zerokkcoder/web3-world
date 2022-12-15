@@ -5,7 +5,7 @@ export default function Blog() {
     return (
         <>
             <Head>
-                <title>NextJS Blog</title>
+                <title>ZeroDot618's Blog</title>
                 <meta name="description" content="blog's description" />
                 <link ref="icon" href="/favicon.ico" />
             </Head>
