@@ -16,9 +16,9 @@ export default function Header() {
             </Link>
             <nav>
                 <ul className="flex gap-6 font-medium items-center">
-                    {routes.map((route) => {
+                    {routes.map((route, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <Link className={`hover:text-yellow-400 hover:underline hover:underline-offset-4 ${router.pathname === `/${route.toLowerCase()}` && 'text-yellow-400'}`} href={`${route.toLowerCase()}`}>{route.toUpperCase()}</Link>
                             </li>
                         );

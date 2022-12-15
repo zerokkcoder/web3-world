@@ -8,8 +8,8 @@ export default function RecentPosts() {
                 <SectionHeader title="Recent posts" href="/blog" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <Article />
-                    <Article />
+                    {/* <Article />
+                    <Article /> */}
                 </div>
             </div>
         </section>
