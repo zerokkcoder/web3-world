@@ -7,7 +7,7 @@ export default function Header() {
     const routes = ['Blog', 'Work', 'Contract'];
     const router = useRouter();
     return (
-        <header className="container mx-auto flex justify-between h-16 items-center">
+        <header className="container mx-auto flex justify-between h-16 items-center px-6 md:px-0">
             <Link href="/">
                 <div className="flex items-center gap-2 font-medium">
                     <Image className="rounded-full" src="/logo.jpg" alt="logo" width="36" height="36" />
