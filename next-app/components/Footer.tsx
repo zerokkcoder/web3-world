@@ -7,12 +7,12 @@ export default function Footer() {
             <nav>
                 <ul className="flex gap-6">
                     <li>
-                        <Link href="#">
+                        <Link href="https://github.com/zerodot618" target="_blank">
                             <FiGithub />
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="https://twitter.com/bubuhuanggz" target="_blank">
                             <FiTwitter />
                         </Link>
                     </li>
