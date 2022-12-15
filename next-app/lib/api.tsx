@@ -25,3 +25,9 @@ export const getPostBySlug = (slug: string) => {
         content,
     }
 }
+
+export const getAllWork = () => {
+    const data = fs.readFileSync('contants/data.json', 'utf-8');
+    const jsonData = JSON.parse(data);
+    return jsonData.work;
+}

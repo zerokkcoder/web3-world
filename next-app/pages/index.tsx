@@ -3,20 +3,22 @@ import Head from "next/head";
 import FeaturedWork from "../components/FeaturedWork";
 import Hero from "../components/Hero";
 import RecentPosts from "../components/RecentPosts";
-import { getAllPosts } from "../lib/api";
+import { getAllPosts, getAllWork } from "../lib/api";
 
 export const getStaticProps: GetStaticProps<{ posts: any }> = async () => {
 
   const posts = getAllPosts();
+  const work = getAllWork();
 
   return {
     props: {
       posts,
+      work,
     },
   }
 }
 
-export default function Home({ posts }: { posts: any }) {
+export default function Home({ posts, work }: { posts: any, work: any }) {
   return (
     <>
       <Head>
@@ -26,7 +28,7 @@ export default function Home({ posts }: { posts: any }) {
       </Head>
       <Hero />
       <RecentPosts posts={posts} />
-      <FeaturedWork />
+      <FeaturedWork work={work} />
     </>
 
   )
