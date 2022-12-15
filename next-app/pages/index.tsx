@@ -1,9 +1,22 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import FeaturedWork from "../components/FeaturedWork";
 import Hero from "../components/Hero";
 import RecentPosts from "../components/RecentPosts";
+import { getAllPosts } from "../lib/api";
 
-export default function Home() {
+export const getStaticProps: GetStaticProps<{ posts: any }> = async () => {
+
+  const posts = getAllPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+export default function Home({ posts }: { posts: any }) {
   return (
     <>
       <Head>
@@ -12,7 +25,7 @@ export default function Home() {
         <link ref="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <RecentPosts />
+      <RecentPosts posts={posts} />
       <FeaturedWork />
     </>
 

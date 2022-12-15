@@ -2,29 +2,28 @@ import { GetStaticPaths } from "next";
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
+import { getAllPosts, getPostBySlug } from "../../lib/api";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const files = fs.readdirSync('./posts');
 
-    const paths = files.map((fileName: string) => ({
-        params: {
-            slug: fileName.replace('.md', ''),
-        }
-    }));
+    const posts = getAllPosts();
+
     return {
-        paths,
+        paths: posts.map((post: any) => {
+            return {
+                params: {
+                    slug: post.slug,
+                },
+            };
+        }),
         fallback: false,
     }
 }
 
 export const getStaticProps = async ({ params: { slug } }: { params: { slug: string } }) => {
-    const fileName = fs.readFileSync(`./posts/${slug}.md`, 'utf-8');
-    const { data: frontmatter, content } = matter(fileName);
+    const post = getPostBySlug(slug);
     return {
-        props: {
-            frontmatter,
-            content,
-        }
+        props: post,
     }
 }
 

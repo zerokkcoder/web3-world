@@ -3,20 +3,12 @@ import Head from "next/head";
 import Article from "../../components/Article";
 import fs from 'fs';
 import matter from 'gray-matter';
+import { getAllPosts } from "../../lib/api";
 
 
 export const getStaticProps: GetStaticProps<{ posts: any }> = async () => {
-    const files = fs.readdirSync('./posts');
 
-    const posts = files.map((fileName: any) => {
-        const slug = fileName.replace('.md', '');
-        const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
-        const { data: frontmatter } = matter(readFile);
-        return {
-            slug,
-            ...frontmatter,
-        };
-    });
+    const posts = getAllPosts();
 
     return {
         props: {
@@ -38,7 +30,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                     <h1 className="text-3xl font-bold mb-6 p-4">Blog</h1>
                     {
                         posts.map((post: any) => (
-                            <Article className="border-b-2" key={post.slug} post={post}/>
+                            <Article className="border-b-2" key={post.slug} post={post} />
                         ))
                     }
                 </div>
