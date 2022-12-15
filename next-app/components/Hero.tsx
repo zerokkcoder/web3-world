@@ -15,7 +15,7 @@ export default function Hero() {
                     </p>
                     <a href="#" className="bg-black text-white hover:bg-gray-500 dark:bg-white dark:text-black hover:dark:bg-gray-500 px-6 py-3 text-lg rounded">Check my work</a>
                 </div>
-                <span className="">
+                <span>
                     <img src="/programming.svg" alt="Image Of Programming" />
                 </span>
             </div>
