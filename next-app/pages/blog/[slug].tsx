@@ -1,6 +1,4 @@
 import { GetStaticPaths } from "next";
-import fs from 'fs';
-import matter from 'gray-matter';
 import md from 'markdown-it';
 
 import { getAllPosts, getPostBySlug } from "../../lib/api";
@@ -27,7 +25,6 @@ export const getStaticProps = async ({ params: { slug } }: { params: { slug: str
         props: post,
     }
 }
-
 
 export default function PostPage({ frontmatter, content }: { frontmatter: any, content: any }) {
     return (
