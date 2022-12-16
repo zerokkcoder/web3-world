@@ -31,3 +31,8 @@ export const getAllWork = () => {
     const jsonData = JSON.parse(data);
     return jsonData.work;
 }
+
+export const getAllPostsByTag = ({ tag }: { tag: string }) => {
+    const posts = getAllPosts();
+    return posts.filter((post: any) => post.tags.includes(tag))
+}

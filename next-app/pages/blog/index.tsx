@@ -35,7 +35,6 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                     }
                 </div>
             </section>
-
         </>
     );
 }
