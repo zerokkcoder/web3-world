@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ThemeToggler from "./ThemeToggler";
 
-const routes = ['Blog', 'Work', 'Contract'];
+const routes = ['Blog', 'Work']; // Can add menu in here.
 
 export default function Header() {
     const router = useRouter();
