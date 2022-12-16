@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
     return (
         <header className="px-6">
@@ -16,7 +18,7 @@ export default function Hero() {
                     <a href="#" className="bg-black text-white hover:bg-gray-500 dark:bg-white dark:text-black hover:dark:bg-gray-500 px-6 py-3 text-lg rounded">Check my work</a>
                 </div>
                 <span>
-                    <img src="/programming.svg" alt="Image Of Programming" />
+                    <Image src="/programming.svg" alt="Image Of Programming" width="787" height="573" />
                 </span>
             </div>
         </header>

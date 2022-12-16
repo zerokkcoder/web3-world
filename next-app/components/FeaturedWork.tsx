@@ -9,7 +9,7 @@ export default function FeaturedWork({ work }: { work: any }) {
 
                 <div className="flex flex-col gap-2">
                     {work.map((workItem: any) => (
-                        <Work imgSrc="" key={workItem.title} item={workItem} />
+                        <Work key={workItem.title} item={workItem} />
                     ))}
                 </div>
             </div>
