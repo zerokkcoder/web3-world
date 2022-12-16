@@ -28,3 +28,5 @@ You can deploy next-app on [Vercel](https://vercel.com/).
 ## Learn more
 
 - [Tailwindcss Doc](https://tailwindcss.com/docs/installation)
+- [NextJS Doc](https://nextjs.org/docs/getting-started)
+- [ReactJS Doc](https://reactjs.org/docs/getting-started.html)
