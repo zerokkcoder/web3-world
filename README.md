@@ -46,3 +46,7 @@ You can deploy next-app on [Vercel](https://vercel.com/).
 - [Behance](https://www.behance.net/?search=portfolio)
 - [Canva](https://www.canva.com/create/portfolios/)
 - [Pinterest](https://pinterest.com/search/pins/?q=Portfolio)
+
+## Plan integration
+
+- [NFT Metadata Upload With Thirdweb Storage](https://dev.to/langford_dev/nft-metadata-upload-dapp-with-react-thirdweb-storage-25c6)

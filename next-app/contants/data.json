@@ -1,17 +1,19 @@
 {
     "work": [{
-            "title": "Example piece one",
-            "image": "https://placedog.net/500",
+            "title": "Myself Web3 Docs",
+            "image": "/web3-doc.png",
             "year": 2022,
-            "category": "Dashboard",
-            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            "category": "Web3 Docs",
+            "description": "Here are some documents and notes about learning web3. It's kind of my learning roadmap.",
+            "link": "https://web3-world-doc.vercel.app/"
         },
         {
             "title": "Example piece two",
             "image": "https://placedog.net/500",
             "year": 2022,
             "category": "Backend",
-            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "link": "#"
         }
     ]
 }
