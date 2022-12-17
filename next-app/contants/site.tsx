@@ -61,6 +61,10 @@ export const Websites = [
             {
                 "name": "BuildSpace",
                 "url": "https://buildspace.so/"
+            },
+            {
+                "name": "Alchemy University",
+                "url": "https://university.alchemy.com/"
             }
         ]
     },

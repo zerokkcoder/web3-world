@@ -8,7 +8,7 @@ export default function Sites({ index, website }: { index: any, website: any }) 
     return (
         <>
             <h2 className={`text-2xl font-bold ${(active === website.title.replace(' ', '-') || (!active && index === 0)) && 'text-yellow-400'}`} id={website.title.replace(' ', '-')}>{website.title}</h2>
-            <div className="w-full grid grid-cols-3 md:grid-cols-6 gap-2 py-6">
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-2 py-6">
                 {website.sites.map((site: any, index: any) => (
                     <div key={index} className="flex items-center hover:underline hover:text-yellow-400 hover:underline-offset-4">
                         <SiSitepoint />
