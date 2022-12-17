@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ThemeToggler from "./ThemeToggler";
 import { FiGithub, FiTwitter } from "react-icons/fi";
-
-const routes = ['Blog', 'Work']; // Can add menu in here.
+import { TopNavMenus } from "../contants/site";
 
 export default function Header() {
     const router = useRouter();
@@ -27,7 +26,7 @@ export default function Header() {
             </div>
             <nav>
                 <ul className="flex gap-6 font-medium items-center">
-                    {routes.map((route) => {
+                    {TopNavMenus.map((route) => {
                         return (
                             <li key={route} className={`hover:text-yellow-400 hover:underline hover:underline-offset-4 ${router.pathname === `/${route.toLowerCase()}` && 'text-yellow-400'}`}>
                                 <Link href={`/${route.toLowerCase()}`}>{route.toUpperCase()}</Link>

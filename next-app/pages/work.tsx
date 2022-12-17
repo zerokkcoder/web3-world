@@ -23,7 +23,7 @@ export default function WorkPage({ work }: { work: any }) {
             </Head>
             <section className="px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-3xl font-bold mb-6 p-4">Work</h1>
+                    <h1 className="text-3xl font-bold mb-6 p-4 underline underline-offset-8">Work</h1>
                     {work.map((workItem: any) => (
                         <Work key={workItem.title} item={workItem} />
                     ))}
