@@ -48,6 +48,23 @@ export const Websites = [
         ]
     },
     {
+        "title": "Web3 Jobs",
+        "sites": [
+            {
+                "name": "电鸭",
+                "url": "https://eleduck.com/"
+            },
+            {
+                "name": "Web3 Career",
+                "url": "https://web3.career/"
+            },
+            {
+                "name": "蚁穴Web3",
+                "url": "http://antcave.club/"
+            }
+        ]
+    },
+    {
         "title": "Learning DAO",
         "sites": [
             {
