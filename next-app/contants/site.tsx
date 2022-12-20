@@ -107,6 +107,39 @@ export const Websites = [
         ]
     },
     {
+        "title": "Study Contribution",
+        "sites": [
+            {
+                "name": "First contributions",
+                "url": "https://firstcontributions.github.io/"
+            },
+            {
+                "name": "FIRST TIMERS ONLY",
+                "url": "https://www.firsttimersonly.com/"
+            },
+            {
+                "name": "Good First Issue",
+                "url": "https://goodfirstissue.dev/"
+            },
+            {
+                "name": "Good First Issues",
+                "url": "https://goodfirstissues.com/"
+            },
+            {
+                "name": "Up For Grabs",
+                "url": "https://up-for-grabs.net/"
+            },
+            {
+                "name": "LibHunt",
+                "url": "https://www.libhunt.com/topic/good-first-issue"
+            },
+            {
+                "name": "Project Awesome",
+                "url": "https://project-awesome.org/MunGell/awesome-for-beginners"
+            }
+        ]
+    },
+    {
         "title": "Tech Tools",
         "sites": [
             {
