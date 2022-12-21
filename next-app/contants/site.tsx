@@ -61,6 +61,18 @@ export const Websites = [
             {
                 "name": "蚁穴Web3",
                 "url": "http://antcave.club/"
+            },
+            {
+                "name": "Indeed",
+                "url": "https://indeed.com/"
+            },
+            {
+                "name": "CryptoJobsList",
+                "url": "https://cryptojobslist.com/"
+            },
+            {
+                "name": "CryptoJobs",
+                "url": "https://crypto.jobs/"
             }
         ]
     },
